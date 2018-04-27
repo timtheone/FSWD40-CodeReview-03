@@ -1,0 +1,45 @@
+$primary-color: rgb(244, 244, 244);
+$aqua-color: #00AE8D;
+$header-text-color: #0C4455;
+$font-stack: 'Roboto', sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $primary-color;
+    font-family: $font-stack;
+}
+
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    header {
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            color: #F67A2F;
+            &:hover {
+                color: #1E4454;
+                transition-duration: 0.35s;
+                
+            }
+        }
+    }
+}
+
+@import "card";
+@import "button";
+@import "form";
+
+@media screen and(max-width: 500px) {
+    main {
+        .card-grid {
+            display: grid;
+            grid-template-columns: 100%;
+
+            .card {
+                width: 50%;
+            }
+        }
+    }
+}

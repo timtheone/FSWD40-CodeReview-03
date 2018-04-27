@@ -1,0 +1,42 @@
+.wrapper-calc {
+    @extend .wrapper;
+    text-align: left;
+    h1 {
+        text-align: center;
+    }
+}
+
+#main-calc {
+    @extend main;
+    background-color: $header-text-color;
+    form {
+        margin: 0 auto;
+        width: 151px + 131px;
+        padding: 40px;
+
+        input[type=text] {
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 8px;
+            background-color: $primary-color;
+        }
+
+        select {
+            width: 145px;
+            height: 33px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 8px;
+            background-color: $primary-color;
+        }
+
+        label {
+            display: block;
+            width: 130px;
+            float: left;
+            font-size: 17px;
+            margin-bottom: 15px;
+            }
+    }
+}
+

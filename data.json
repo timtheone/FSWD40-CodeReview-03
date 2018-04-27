@@ -1,0 +1,1 @@
+var teamMembers = '[{"name":"Fran", "email":"fran@index.com","image":"images/girl1.png"},{"name":"Bill","email":"bill@index.com","image":"images/man1.png"},{"name":"Fritz", "email":"fritz@index.com","image":"images/man2.png"}]';

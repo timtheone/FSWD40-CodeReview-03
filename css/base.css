@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: "Roboto", sans-serif; }
+
+.wrapper, .wrapper-calc {
+  margin: 0 auto;
+  text-align: center; }
+  .wrapper header a, .wrapper-calc header a {
+    text-decoration: none; }
+  .wrapper header h1, .wrapper-calc header h1 {
+    color: #F67A2F; }
+    .wrapper header h1:hover, .wrapper-calc header h1:hover {
+      color: #1E4454;
+      transition-duration: 0.35s; }
+
+main, #main-calc {
+  background-color: #00AE8D;
+  color: white; }
+  main h1, #main-calc h1 {
+    color: #0C4455;
+    padding-top: 10px; }
+  main .card-grid, #main-calc .card-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%; }
+    main .card-grid .card, #main-calc .card-grid .card {
+      justify-self: center;
+      width: 80%;
+      text-align: center; }
+      main .card-grid .card img, #main-calc .card-grid .card img {
+        width: 100%; }
+
+input[type="button"], input[type="reset"] {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px; }
+
+#button1, #button2 {
+  margin-top: 15px;
+  width: 160px;
+  color: #0C4455;
+  background-color: #f4f4f4;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #f4f5f5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f5f5), to(#dfdddd));
+  background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd); }
+  #button1:hover, #button2:hover {
+    background-color: #d9dddd;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9dddd), to(#c6c3c3));
+    background-image: -webkit-linear-gradient(top, #d9dddd, #c6c3c3); }
+
+#button2 {
+  margin-top: 0px;
+  float: right;
+  width: 153px;
+  padding: 3px;
+  font-size: 18px;
+  font-weight: 700; }
+
+.wrapper-calc {
+  text-align: left; }
+  .wrapper-calc h1 {
+    text-align: center; }
+
+#main-calc {
+  background-color: #0C4455; }
+  #main-calc form {
+    margin: 0 auto;
+    width: 282px;
+    padding: 40px; }
+    #main-calc form input[type=text] {
+      margin-bottom: 15px;
+      border-radius: 5px;
+      padding: 8px;
+      background-color: #f4f4f4; }
+    #main-calc form select {
+      width: 145px;
+      height: 33px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      padding: 8px;
+      background-color: #f4f4f4; }
+    #main-calc form label {
+      display: block;
+      width: 130px;
+      float: left;
+      font-size: 17px;
+      margin-bottom: 15px; }
+
+@media screen and (max-width: 500px) {
+  main .card-grid, #main-calc .card-grid {
+    display: grid;
+    grid-template-columns: 100%; }
+    main .card-grid .card, #main-calc .card-grid .card {
+      width: 50%; } }
+
+/*# sourceMappingURL=base.css.map */
